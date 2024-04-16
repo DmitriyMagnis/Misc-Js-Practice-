@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Range</title>
+  </head>
+  <body>
+    <div class="slider-box">
+      <div class="range-slider">
+        <span class="slider-track"></span>
+        <input
+          type="range"
+          name="min_val"
+          class="min-val"
+          min="1000"
+          max="10000"
+          value="3000"
+        />
+        <input
+          type="range"
+          name="max_val"
+          class="max-val"
+          min="1000"
+          max="10000"
+          value="8000"
+        />
+        <div class="tooltip min-tooltip"></div>
+        <div class="tooltip max-tooltip"></div>
+      </div>
+      <div class="input-box">
+        <div class="min-box">
+          <div class="input-wrap">
+            <div class="input-addon">$</div>
+            <input type="text" name="min_input" class="input-field min-input" />
+          </div>
+        </div>
+        <div class="max-box">
+          <div class="input-wrap">
+            <div class="input-addon">$</div>
+            <input type="text" name="max_input" class="input-field max-input" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
